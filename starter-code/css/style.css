@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One&display=swap');
+
+* {
+  cursor: none;
+}
+
+body {
+  font-family: 'Amatic SC', cursive;
+  font-size: 36px;
+  position: relative;
+  height: 100vh;
+  background-color: #f5ced5;
+  display: flex;
+  justify-content: center;
+
+}
+
+span {
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+div.cursor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #5776a3;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.25s, height 0.25s;
+}
+
+.background {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
+  max-width: 600px;
+  height: 500px;
+}
+
+.outputArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 180px;
+}
+
+.buttons {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.buttons a {
+  margin: 20px;
+  font-family: 'Hammersmith One', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  transition: font-size .25s, color .25s;
+}
+
+.reset {
+  font-family: 'Hammersmith One', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.output {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 300px;
+  color: yellow;
+}
+
+a:hover {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 100px;
+  color: #fa9fb0;
+}
